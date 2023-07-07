@@ -8,5 +8,3 @@ FROM caddy:2.7
 LABEL maintainer="Saidul Islam <saidul.04@gmail.com>"
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
-
-CMD ["/usr/bin/caddy", "--conf", "/etc/Caddyfile", "--log", "stdout"]
